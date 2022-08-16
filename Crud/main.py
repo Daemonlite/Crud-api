@@ -15,13 +15,6 @@ class Task(db.Model):
     def __repr__(self):
         return self.name
 
-
-# fakeDatabase={
-#     1:{'name':'clean car'},
-#     2:{'name':'write blog'},
-#     3:{'name':'wash car'},
-# }
-
 taskFields={
     'id':fields.Integer,
     'name':fields.String
