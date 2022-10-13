@@ -55,8 +55,8 @@ class Item(Resource):
         return task
 
     @marshal_with(taskFields)
-    def delete(self,pk):
-        task = Task.query.filter_by(id=pk).first()
+    def delete(self,ids):
+        task = Task.query.filter_by(id=ids).first()
         db.session.delete(task)
         db.session.commit()
         tasks = Task.query.all()
