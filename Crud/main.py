@@ -33,8 +33,8 @@ class Items(Resource):
      db.session.add(task)
      db.session.commit()
      tasks = Task.query.all()
-    #  itemId= len(fakeDatabase.keys())+1
-    #  fakeDatabase[itemId]={'name':data['name']}
+    
+ 
      return tasks
 
 
