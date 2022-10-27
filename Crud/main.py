@@ -51,7 +51,7 @@ class Item(Resource):
         task = Task.query.filter_by(id=pk).first()
         task.name = data['name']
         db.session.commit()
-        # fakeDatabase[pk]['name']=data['name']
+       
         return task
 
     @marshal_with(taskFields)
